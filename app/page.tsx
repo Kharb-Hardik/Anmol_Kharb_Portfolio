@@ -392,11 +392,11 @@ const Home = () => {
           content="Anmol Kharb, Badminton, India, Athlete, Professional Badminton, BWF, Indian Sport, Badminton Player"
         />
         <meta name="author" content="Anmol Kharb" />
-        <link rel="canonical" href="https://yourwebsite.com/" />
+        <link rel="canonical" href="https://anmolkharb.com/" />
         <link rel="icon" href="/favicon.ico" sizes="any" />
 
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://yourwebsite.com/" />
+        <meta property="og:url" content="https://anmolkharb.com/" />
         <meta
           property="og:title"
           content="Anmol Kharb | Professional Badminton Athlete"
@@ -407,11 +407,11 @@ const Home = () => {
         />
         <meta
           property="og:image"
-          content="https://yourwebsite.com/og-image.jpg"
+          content="https://anmolkharb.com/avatar.jpeg"
         />
 
         <meta property="twitter:card" content="summary_large_image" />
-        <meta property="twitter:url" content="https://yourwebsite.com/" />
+        <meta property="twitter:url" content="https://anmolkharb.com/" />
         <meta
           property="twitter:title"
           content="Anmol Kharb | Professional Badminton Athlete"
@@ -422,7 +422,7 @@ const Home = () => {
         />
         <meta
           property="twitter:image"
-          content="https://yourwebsite.com/og-image.jpg"
+          content="https://anmolkharb.com/avatar.jpeg"
         />
       </Head>
 
@@ -447,7 +447,7 @@ const Home = () => {
           transform: scale(1);
         }
       `}</style>
-      
+
       <header className="fixed top-0 left-0 right-0 md:top-5 md:w-auto md:left-1/2 md:-translate-x-1/2 z-50">
         <nav className="bg-black/80 backdrop-blur-sm md:rounded-full shadow-lg px-4 py-2">
           <div className="flex flex-wrap justify-center items-center gap-x-1 gap-y-1 sm:gap-x-2 md:gap-x-4">
