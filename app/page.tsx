@@ -51,6 +51,7 @@ const Home = () => {
 
   const videoUrls: string[] = [
     "https://www.youtube.com/embed/mPGLTQ64jPw",
+    "https://www.youtube.com/embed/TVlTntd0MqY?si=cP5JFgllUTXLHBp3",
     "https://www.youtube.com/embed/SStkrYjSObU",
     "https://www.youtube.com/embed/2imL5xkw_eU",
     "https://www.youtube.com/embed/GfLIRFpJXe8",
@@ -119,9 +120,30 @@ const Home = () => {
       alt: "Anmol Kharb smiling after winning a point",
       className: "",
     },
+    {
+      src: "/g13.jpg",
+      alt: "Anmol Kharb at Arctic Open 2025",
+      className: "",
+    },
+    {
+      src: "/g14.jpg",
+      alt: "Anmol Kharb at Arctic Open 2025 with coach",
+      className: "",
+    },
+    {
+      src: "/g15.jpg",
+      alt: "Anmol Kharb at Arctic Open 2025 Newspaper",
+      className: "",
+    },
   ];
 
   const internationalTournaments = [
+    {
+      year: 2025,
+      name: "Clash of Clans Arctic Open",
+      location: "Finland",
+      result: "Semi Finalist",
+    },
     {
       year: 2025,
       name: "Cameroon International Challenge",
@@ -520,7 +542,7 @@ const Home = () => {
                 Professional Badminton Athlete
               </p>
               <button className="px-6 py-2 sm:px-8 sm:py-3 text-sm sm:text-base bg-white text-black font-semibold rounded-full hover:bg-gray-200 transition-colors">
-                WORLD RANK #47
+                WORLD RANK #43
               </button>
             </AnimatedSection>
           </div>
@@ -564,7 +586,7 @@ const Home = () => {
                       </p>
                     </div>
                     <div className="py-4 bg-gray-100 rounded-lg">
-                      <p className="text-3xl font-bold text-gray-900">#47</p>
+                      <p className="text-3xl font-bold text-gray-900">#43</p>
                       <p className="text-sm text-gray-500 font-medium uppercase tracking-wider">
                         Rank
                       </p>
@@ -640,9 +662,12 @@ const Home = () => {
               </div>
               <div className="grid grid-cols-2 md:grid-cols-4 auto-rows-[250px] gap-4">
                 {galleryImages.slice(0, visibleImages).map((img, index) => (
-                  <div
+                  <a
                     key={index}
-                    className={`relative rounded-lg shadow-lg overflow-hidden ${img.className}`}
+                    href={img.src}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`relative block rounded-lg shadow-lg overflow-hidden ${img.className}`}
                   >
                     <Image
                       src={img.src}
@@ -651,9 +676,10 @@ const Home = () => {
                       objectFit="cover"
                       className="transition-transform duration-300 hover:scale-105"
                     />
-                  </div>
+                  </a>
                 ))}
               </div>
+
               {visibleImages < galleryImages.length && (
                 <div className="text-center mt-12">
                   <button
